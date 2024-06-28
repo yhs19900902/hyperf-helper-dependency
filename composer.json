@@ -1,0 +1,56 @@
+{
+    "name": "hyperf-helper/dependency",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/lazychanger/hyperf-helper-dependency",
+    "keywords": [
+        "php",
+        "hyperf",
+        "dependecy",
+        "annotation"
+    ],
+    "authors": [
+        {
+            "email": "chengliang.duan@gmail.com",
+            "name": "ChengLiang Duan",
+            "homepage": "https://github.com/lazychanger"
+        }
+    ],
+    "description": "hyperf hylper dependency",
+    "autoload": {
+        "psr-4": {
+            "HyperfHelper\\Dependency\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfHelperTest\\Dependency\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "hyperf/di": "^3.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.0",
+        "swoole/ide-helper": "^4.5"
+    },
+    "suggest": {
+        "swow/swow": "Required to create swow components."
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit -c phpunit.xml --colors=always",
+        "analyse": "phpstan analyse --memory-limit 1024M -l 0 ./src"
+    },
+    "extra": {
+        "hyperf": {
+            "config": "HyperfHelper\\Dependency\\ConfigProvider"
+        }
+    }
+}
