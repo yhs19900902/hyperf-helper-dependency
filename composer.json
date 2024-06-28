@@ -1,5 +1,5 @@
 {
-    "name": "hyperf-helper/dependency",
+    "name": "yhs-hyperf-helper/dependency",
     "type": "library",
     "license": "MIT",
     "homepage": "https://github.com/lazychanger/hyperf-helper-dependency",
